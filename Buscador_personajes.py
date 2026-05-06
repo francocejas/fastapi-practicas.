@@ -7,6 +7,7 @@ personajes=[{"nombre": "Harry Potter"}, {"nombre": "Albus Dumbledore"}, {"nombre
 @app.get("/personaje/{id}")
 def encontrar_personajes(id: int):
     if id <0 or id >=len(personajes):  #el id debe ser menor que el largo de la lista
-           return{"error": "personaje no existe"} #método para no recorrer va directo a la posicion del objeto del diciconario
+        return{"error": "personaje no existe"} #método para no recorrer va directo a la posicion del objeto del diciconario
     else:
-          return{"datos": personajes[id]}
+        return{"datos": personajes[id]}
+    
