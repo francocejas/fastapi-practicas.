@@ -18,3 +18,7 @@ async def crear_libro(nuevo_libro: Libro):
         "mensaje": "libro registado",
            "datos": nuevo_libro }
 
+@app.get("/libros")
+async def get_libros ():
+    return {"mensaje": "Lista de libros",
+            "Lista": Listavacia }
